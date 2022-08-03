@@ -1,0 +1,40 @@
+
+body {
+    font-family: "Tahoma";
+    background-image: url(https://townsquare.media/site/366/files/2020/08/james-hetfield-metallica-live-september-2011.jpg);
+    color: white;
+    
+}
+
+.resultsBar {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid rgb(0, 255, 64); */
+}
+
+#playaudio {
+    width: 100%;
+    
+}
+
+.songReturn {
+    padding: 1.5vh;
+    width: 10rem;
+    /* border: solid rgb(25, 0, 255) */
+
+}
+
+.songTitle {
+    word-wrap: normal;
+}
+
+h1 {
+    text-align: center;
+    /* border: 2px solid red; */
+    color: white;
+}
+
+#search {
+    text-align: center;
+    color: white;
+}

@@ -3,18 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
   <script src="main.js" defer></script>
   <title>Music Search</title>
 </head>
 <body>
-  <h1>myTunes</h1>
+  <h1>jeffTunes</h1>
 
-<div class="SB"
-<input type="text" class="searchbarinput" placeholder="Search for Artist">
-<button><i class="" class="SBsub"></i></button>
+  <div id="search">
+    <form id="search-form" action="">
+    <label for="term">Search Artists:</label>
+    <input id="search-box" type="text" name="term">
+    <button>Search</button>
+    </form>
+    </div>
+    <div id="results"> </div>
+    
+    <div class="container"> 
+      
+      <audio autoplay id="playAudio" controls src =""></audio>
+
+
 </div>
 
-<div class="searchtext">Search Results</i></div>
-<div class="container"> </div>
 </body>
 </html>
