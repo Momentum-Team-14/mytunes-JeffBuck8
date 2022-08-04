@@ -1,23 +1,8 @@
 const container = document.querySelector(".container")
-// const 
-// 
     
 
-// const document.createElement("audio")
-// console.log(songs)
+let audio = document.createElement("audio")
 
-// let searchBar = document.createElement("div")
-// searchBar.classList.add("searchBar")
-// container.appendChild(searchBar)
-
-// let typeBox = document.createElement("input")
-// typeBox.classList.add("typebox")
-// searchBar.appendChild(typeBox)
-
-// let searchButton = document.createElement("button")
-// searchButton.innerText = "Search"
-// searchButton.classList.add('button')
-// searchBar.appendChild(searchButton)
 
 
 let resultsDiv = document.querySelector('#results')
@@ -52,11 +37,13 @@ function getSearchResults(url){ console.log(url)
         
     })
 }
+
+    //the result div to show the result
     let resultsArea = document.createElement('div')
     resultsArea.classList.add("resultsBar")
     
     container.appendChild(resultsArea)
-    
+    //function to show all of the album artwork, Artist name, and song title
     function showSongName(songArray) {
         resultsArea.innerHTML = ''
         for (let song of songArray){
@@ -81,9 +68,14 @@ function getSearchResults(url){ console.log(url)
             songTitle.innerText = `${song.trackName}`
             songReturnDiv.appendChild(songTitle)
 
-            // let playAudio = document.querySelector("#playAudio");
-            // songReturnDiv.addEventListener("click");
-            // playAudio.src = `${results.previewUrl}`
+            let playAudio = document.querySelector("#playAudio");
+            songReturnDiv.addEventListener("click", (event) => {
+            playAudio.src = song.previewUrl;
+
+           
+            
+
+            })
             
             
         }}
