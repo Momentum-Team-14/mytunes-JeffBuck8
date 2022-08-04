@@ -18,8 +18,9 @@ h1 {
     /* border: 2px solid rgb(0, 255, 64); */
 }
 
+
 #playAudio {
-    width: 35%;
+    width: 100%;
     text-align: center;
 }
 
